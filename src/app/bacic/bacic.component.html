@@ -1,0 +1,23 @@
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+				<h1>{{title}}</h1>
+				<h2>My favorite hero is: {{myHero}}</h2>
+				<p>Heroes:</p>
+				<ul>
+				  <li *ngFor="let hero of heroes">
+					{{ hero }}
+				  </li>
+				</ul>
+				  <p *ngIf="heroes.length > 3">There are many heroes!</p>	
+<hr/>	
+				  <p>Other Heroes:</p>
+				  <ul>
+					<li *ngFor="let hero of heroes_c">
+					  {{ hero.name }}
+					  </li>
+				  </ul>
+				  <p *ngIf="heroes_c.length > 3">There are many heroes!</p>		
+            </div>
+        </div>
+    </div>
